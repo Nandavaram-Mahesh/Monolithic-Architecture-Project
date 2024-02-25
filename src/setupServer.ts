@@ -10,10 +10,9 @@ import Logger from 'bunyan'
 import {Server} from 'socket.io'
 import { createClient } from 'redis'
 import { createAdapter } from '@socket.io/redis-adapter'
-import { config } from '@root/config'
-import applicationRoutes from '@root/routes'
-
-import { CustomError, IErrorResponse } from '@global/helpers/error-handler'
+import { config } from './config'
+import applicationRoutes from './routes'
+import { CustomError, IErrorResponse } from './shared/globals/helpers/error-handler'
 import 'express-async-errors'
 
 const log:Logger = config.createLogger('server')

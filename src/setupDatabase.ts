@@ -1,6 +1,6 @@
 import mongoose from 'mongoose'
 import Logger from 'bunyan'
-import {config} from '@root/config'
+import {config} from './config'
 
 const log:Logger = config.createLogger('database')
 

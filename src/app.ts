@@ -1,7 +1,7 @@
 import express,{Express} from 'express'
-import {BonjoServer} from '@root/setupServer'
-import databaseConnection from '@root/setupDatabase'
-import {config} from '@root/config'
+import {BonjoServer} from './setupServer'
+import databaseConnection from './setupDatabase'
+import {config} from './config'
 class MonolithicApplication{
 
     public  initialize():void{
