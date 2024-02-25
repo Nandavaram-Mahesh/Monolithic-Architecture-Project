@@ -6,13 +6,14 @@ import helmet from 'helmet'
 import cookieSession from 'cookie-session'
 import HTTP_STATUS from 'http-status-codes'
 import compression from 'compression'
-import applicationRoutes from './routes'
 import Logger from 'bunyan'
-import { config } from './config'
 import {Server} from 'socket.io'
 import { createClient } from 'redis'
 import { createAdapter } from '@socket.io/redis-adapter'
-import {CustomError, IErrorResponse} from './shared/globals/helpers/error-handler'
+import { config } from '@root/config'
+import applicationRoutes from '@root/routes'
+
+import { CustomError, IErrorResponse } from '@global/helpers/error-handler'
 import 'express-async-errors'
 
 const log:Logger = config.createLogger('server')

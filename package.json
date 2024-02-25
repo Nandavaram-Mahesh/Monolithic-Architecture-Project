@@ -34,6 +34,8 @@
     "mongoose": "^8.2.0",
     "redis": "^4.6.13",
     "socket.io": "^4.7.4",
-    "tsconfig-paths": "^4.2.0"
+    "tsconfig-paths": "^4.2.0",
+    "ttypescript": "^1.5.15",
+    "typescript-transform-paths": "^3.4.7"
   }
 }
