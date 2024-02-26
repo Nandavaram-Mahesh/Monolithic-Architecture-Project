@@ -14,6 +14,7 @@ class MonolithicApplication{
 
     private loadConfig():void{
         config.validateConfig()
+        config.cloudinaryConfig()
     }
 }
 

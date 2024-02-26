@@ -28,7 +28,7 @@ export class BonjoServer {
     public start():void{
         this.securityMiddleware(this.app)
         this.routesMiddleware(this.app)
-        this.standardyMiddleware(this.app)
+        this.standardMiddleware(this.app)
         this.globalErrorHandler(this.app)
         this.startServer(this.app)
 
@@ -54,7 +54,7 @@ export class BonjoServer {
 
         }))
     }
-    private standardyMiddleware(app:Application):void{
+    private standardMiddleware(app:Application):void{
         app.use(compression())
         app.use(json({limit:'50mb'}))
         app.use(urlencoded({extended:true,limit:'50mb'}))
